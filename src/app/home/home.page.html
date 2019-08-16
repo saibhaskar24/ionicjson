@@ -1,14 +1,18 @@
 <ion-header>
   <ion-toolbar>
     <ion-title>
-      Ionic Blank
+      Sample JSON Placeholders Ionic App
     </ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content>
-  <div class="ion-padding">
-    The world is your oyster.
-    <p>If you get lost, the <a target="_blank" rel="noopener" href="https://ionicframework.com/docs/">docs</a> will be your guide.</p>
-  </div>
+  <ion-list>
+    <ion-card *ngFor = 'let item of items'>
+        <img [src] = 'item.thumbnailUrl'/>
+      <ion-card-content>
+        {{item.title}}
+      </ion-card-content>
+    </ion-card>
+  </ion-list>
 </ion-content>

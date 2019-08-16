@@ -1,5 +1,7 @@
 {
   "name": "samplejson",
-  "integrations": {},
+  "integrations": {
+    "cordova": {}
+  },
   "type": "angular"
 }
