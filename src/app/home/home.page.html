@@ -1,18 +1,7 @@
 <ion-header>
   <ion-toolbar>
     <ion-title>
-      Sample JSON Placeholders Ionic App
+      Sample JSON Placeholders Ionic App {{nam}}
     </ion-title>
   </ion-toolbar>
 </ion-header>
-
-<ion-content>
-  <ion-list>
-    <ion-card *ngFor = 'let item of items'>
-        <img [src] = 'item.thumbnailUrl'/>
-      <ion-card-content>
-        {{item.title}}
-      </ion-card-content>
-    </ion-card>
-  </ion-list>
-</ion-content>
