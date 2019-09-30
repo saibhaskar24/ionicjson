@@ -34,13 +34,13 @@ export class HomePage {
 
 
   sample() {
-    this.Token = 'eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNTY5NzY1MDU5LCJqdGkiOiJiNWRlN2QyYmFhOTA0YjdlYWJjYWQ0MWRmZjMwN2M4NiIsInVzZXJfaWQiOjF9.sir2HTXwATXZqq7lNzVabG4wa4g5CuyWosE3iYuf-dY';
-    let headers = new HttpHeaders();
-    let turl = 'http://127.0.0.1:8000';
-    headers : {
-      Authorization : 'Bearer ${eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNTY5NzY1MDU5LCJqdGkiOiJiNWRlN2QyYmFhOTA0YjdlYWJjYWQ0MWRmZjMwN2M4NiIsInVzZXJfaWQiOjF9.sir2HTXwATXZqq7lNzVabG4wa4g5CuyWosE3iYuf-dY}'
+    this.Token = 'eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNTY5ODU1ODA4LCJqdGkiOiIwMzgxOWM1OTkwYjA0MzgxOGY3M2ZhNjgyYzFkYjJlYiIsInVzZXJfaWQiOjF9.tkCRPQWzaCQ8ni2AvlrCrg5DF6Pacmc4kjmz_hEd7jQ';
+    let headers = {
+      Authorization : 'Bearer ${this.Token}'
     };
-    let data: Observable<any> = this.http.get(turl,{headers: headers});
+    let turl = 'http://127.0.0.1:8000';
+    
+    let data: Observable<any> = this.http.get(turl,{headers});
       data.subscribe(result => {
       console.log(result);
     });
