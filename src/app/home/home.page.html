@@ -4,4 +4,18 @@
       Sample JSON Placeholders Ionic App {{nam}}
     </ion-title>
   </ion-toolbar>
+<<<<<<< HEAD
 </ion-header>
+=======
+</ion-header>
+<ion-content>
+  <ion-list>
+    <ion-card *ngFor = 'let item of items'>
+        <img [src] = 'item.thumbnailUrl'/>
+      <ion-card-content>
+        {{item.title}}
+      </ion-card-content>
+    </ion-card>
+  </ion-list>
+</ion-content>
+>>>>>>> 34705610376ea35eb4582453a10788994ffbad8d
